@@ -24,7 +24,7 @@ SSH-agentа на время работы сессии.
 
 Перед выполнением указать режим сборки в переменной deploy_method (./deploy_microservice/defaults/main.yml):
 - "default" — обычное приложение
-- "docker" — запуск как Docker-контейнер
+- "docker" — Docker-контейнер
 
 #defaults file for deploy_microservice
 app_name: "server.py"
