@@ -20,18 +20,13 @@ SSH-agentа на время работы сессии.
 ./agent_init.sh
 ```
 
-
-## Удаленный доступ к VM
-
-Для ручной установки отдельных компонентов
-
-## 🚀 Запуск роли
+## 🚀 Запуск роли Ansible
 
 Перед выполнением указать режим сборки в переменной deploy_method (./deploy_microservice/defaults/main.yml):
 - "default" — обычное приложение
 - "docker" — запуск как Docker-контейнер
 
-# defaults file for deploy_microservice
+#defaults file for deploy_microservice
 app_name: "server.py"
 app_dir: "/home/admin"
 app_port: 8080
@@ -43,7 +38,7 @@ ansible-playbook playbook.yml
 ```
 
 
-# 🐳 Сборка и запуск Docker вручную (для Дебага)
+# 🐳 Сборка и запуск Docker вручную (for debugging)
 
 Перейди на VM и выполнить:
 
@@ -52,7 +47,6 @@ cd /home/admin/container
 docker build -t server .
 docker run -d -p 8080:8080 --name service-container server
 ```
-
 
 🔍 Проверка
 
