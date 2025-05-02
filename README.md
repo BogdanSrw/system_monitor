@@ -26,11 +26,11 @@ SSH-agentа на время работы сессии.
 - "default" — обычное приложение
 - "docker" — Docker-контейнер
 
-#defaults file for deploy_microservice
-app_name: "server.py"
-app_dir: "/home/admin"
-app_port: 8080
-deploy_method: "docker"
+#defaults file for deploy_microservice\n
+app_name: "server.py"\n
+app_dir: "/home/admin"\n
+app_port: 8080\n
+deploy_method: "docker"\n
 
 Запуск плейбука:
 ```bash
